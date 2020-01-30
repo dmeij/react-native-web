@@ -152,7 +152,7 @@ class TextInput extends React.Component<TextInputProps> {
       autoComplete: autoComplete || autoCompleteType || 'on',
       autoCorrect: autoCorrect ? 'on' : 'off',
       autoFocus,
-      classList: [classes.textinput],
+      classList: [this.props.className, classes.textinput],
       defaultValue,
       dir: 'auto',
       disabled,
